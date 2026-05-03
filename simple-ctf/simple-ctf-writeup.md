@@ -273,3 +273,9 @@ cat root.txt
 | CyberChef | Cracking the password hash |
 | `ssh` | Remote login |
 | `vim` | Privilege escalation |
+
+## Lessons Learned
+- CMS Made Simple versions below 2.2.10 are vulnerable to SQL injection (CVE-2019-9053)
+- Exposed FTP with anonymous access can leak sensitive hints
+- Misconfigured sudo permissions (vim) can lead to full root compromise
+
