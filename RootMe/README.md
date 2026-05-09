@@ -1,8 +1,7 @@
 # RootMe — TryHackMe Writeup
 
 **Platform:** TryHackMe  
-**Room:** RootMe  
-**Difficulty:** Easy  
+**Room:** RootMe   
 **Points Earned:** 210  
 
 ![12 - Room page](images/12-room-page.png)
@@ -11,7 +10,7 @@
 
 ## Overview
 
-RootMe is a beginner CTF room on TryHackMe. The attack path goes through web enumeration, bypassing a file upload restriction to get a webshell, and then escalating to root via a SUID misconfiguration on Python.
+RootMe is a CTF room on TryHackMe. The attack path goes through web enumeration, bypassing a file upload restriction to get a webshell, and then escalating to root via a SUID misconfiguration on Python.
 
 ---
 
@@ -48,7 +47,7 @@ A second run turns up the `/panel/` directory:
 
 ### The Upload Panel
 
-Navigating to `/panel/` reveals a simple file upload page.
+Navigating to `/panel/` reveals a file upload page.
 
 ![03 - Upload panel](images/03-upload-panel.png)
 
@@ -100,7 +99,7 @@ Reading it:
 
 ![08 - User flag](images/08-user-flag.png)
 
-> **User flag:** `THM{y0u_g0t_a_sh3ll}`
+> **User flag:** `THM{y0u********3ll}`
 
 ---
 
@@ -136,7 +135,7 @@ Verifying the effective UID via the shell:
 
 ![10 - Root flag](images/10-root-flag.png)
 
-> **Root flag:** `THM{pr1v1l3g3_3sc4l4t10n}`
+> **Root flag:** `THM{pr1v*******t10n}`
 
 ---
 
